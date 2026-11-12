@@ -41,7 +41,6 @@
 ### Diagrama de entidades relacionais
 
 ```mermaid
-
 erDiagram
     title "DER - Sistema de Gestão da ClinicAu"
 
@@ -63,7 +62,7 @@ erDiagram
         timestamp criado_em
     }
 
-    pets{
+    pets {
         int id PK
         int tutor_id FK
         varchar nome
@@ -83,14 +82,13 @@ erDiagram
         varchar servico
         varchar status
         text observacao
-        time
     }
 
     usuarios ||--o{ agendamentos : "agenda/gerencia"
     tutores ||--o{ pets : "possui (1:N)"
     tutores ||--o{ agendamentos : "responsavel (1:N)"
     pets ||--o{ agendamentos : "paciente (1:N)"
-```
+````
 
 
 
