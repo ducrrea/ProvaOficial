@@ -48,7 +48,7 @@ erDiagram
     usuarios {
         int id PK
         varchar nome
-        varchar email UNIQUE
+        varchar email UK
         varchar senha_hash
         varchar perfil
         timestamp criado_em
